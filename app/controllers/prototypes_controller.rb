@@ -1,6 +1,6 @@
 class PrototypesController < ApplicationController
   before_action :set_prototype, only: [:edit, :update, :show, :destroy]
-  before_action :authenticate_user!, only: [:new]
+  before_action :authenticate_user!, only: [:new, :edit]
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
 
